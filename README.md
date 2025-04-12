@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+![](https://github.com/xyflow/web/blob/main/assets/codesandbox-header-ts.png?raw=true)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Flow starter (Vite + TS)
 
-## Available Scripts
+We've put together this template to serve as a starting point for folks
+interested in React Flow. You can use this both as a base for your own React
+Flow applications, or for small experiments or bug reports.
 
-In the project directory, you can run:
+**TypeScript not your thing?** We also have a vanilla JavaScript starter template,
+just for you!
 
-### `npm start`
+## Getting up and running
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+You can get this template without forking/cloning the repo using `degit`:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npx degit xyflow/vite-react-flow-template your-app-name
+```
 
-### `npm test`
+The template contains mostly the minimum dependencies to get up and running, but
+also includes eslint and some additional rules to help you write React code that
+is less likely to run into issues:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install # or `pnpm install` or `yarn install`
+```
 
-### `npm run build`
+Vite is a great development server and build tool that we recommend our users to
+use. You can start a development server with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+While the development server is running, changes you make to the code will be
+automatically reflected in the browser!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Things to try:
 
-### `npm run eject`
+- Create a new custom node inside `src/nodes/` (don't forget to export it from `src/nodes/index.ts`).
+- Change how things look by [overriding some of the built-in classes](https://reactflow.dev/learn/customization/theming#overriding-built-in-classes).
+- Add a layouting library to [position your nodes automatically](https://reactflow.dev/learn/layouting/layouting)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Resources
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Links:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [React Flow - Docs](https://reactflow.dev)
+- [React Flow - Discord](https://discord.com/invite/Bqt6xrs)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Learn:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Flow – Custom Nodes](https://reactflow.dev/learn/customization/custom-nodes)
+- [React Flow – Layouting](https://reactflow.dev/learn/layouting/layouting)
