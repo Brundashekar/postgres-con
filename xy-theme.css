@@ -1,0 +1,67 @@
+.app-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .palette {
+    width: 250px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  /* Adjust the flow container to fill remaining space */
+  .dndflow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  /* Style for draggable nodes in palette */
+  .dndnode {
+    padding: 10px;
+    border: 1px solid #1a192b;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: grab;
+    background-color: white;
+  }
+  
+  .dndnode.input {
+    border-color: #0041d0;
+  }
+  
+  .dndnode.output {
+    border-color: #ff0072;
+  }
+  
+  .palette-item {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    cursor: grab;
+    background-color: white;
+  }
+  
+  .palette-item-label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .palette-item-desc {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .palette-section h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
